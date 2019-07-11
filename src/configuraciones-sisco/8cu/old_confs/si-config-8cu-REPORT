@@ -1,0 +1,89 @@
+[ Device ]
+Frequency = 1200
+NumComputeUnits = 8
+
+[ SISpatialReport ]
+Format = 1
+Interval = 10000
+device_file = _device_test_file
+cu_file = _cu_test_file
+
+[ ComputeUnit ]
+NumWavefrontPools = 4
+NumVectorRegisters = 65536
+NumScalarRegisters = 16384
+MaxWorkGroupsPerWavefrontPool = 16
+MaxWavefrontsPerWavefrontPool = 16
+
+[ FrontEnd ]
+FetchLatency = 5
+FetchWidth = 4
+FetchBufferSize = 10
+IssueLatency = 1
+IssueWidth = 5
+MaxInstIssuedPerType = 1
+
+[ SIMDUnit ]
+NumSIMDLanes = 16
+Width = 1
+IssueBufferSize = 1
+DecodeLatency = 1
+DecodeBufferSize = 1
+ReadExecWriteLatency = 4
+ReadExecWriteBufferSize = 1
+
+[ ScalarUnit ]
+Width = 1
+IssueBufferSize = 1
+DecodeLatency = 1
+DecodeBufferSize = 1
+ReadLatency = 1
+ReadBufferSize = 1
+ALULatency = 1
+ExecBufferSize = 1
+WriteLatency = 1
+WriteBufferSize = 1
+InFlightBufferSize = 32
+
+[ BranchUnit ]
+Width = 1
+IssueBufferSize = 1
+DecodeLatency = 1
+DecodeBufferSize = 1
+ReadLatency = 1
+ReadBufferSize = 1
+ExecLatency = 4
+ExecBufferSize = 4
+WriteLatency = 1
+WriteBufferSize = 1
+
+[ LDSUnit ]
+Width = 1 
+IssueBufferSize = 1
+DecodeLatency = 1
+DecodeBufferSize = 1
+ReadLatency = 1
+ReadBufferSize = 1
+MaxInflightMem = 1024
+WriteLatency = 1
+WriteBufferSize = 1
+
+[ VectorMemUnit ]
+Width = 1
+IssueBufferSize = 1
+DecodeLatency = 1
+DecodeBufferSize = 1
+ReadLatency = 1
+ReadBufferSize = 1
+MaxInflightMem = 32
+WriteLatency = 1
+WriteBufferSize = 1
+MemBufferPerWavefront = 0 
+
+[ LocalDataShare ]
+Size = 65536
+AllocSize = 64
+BlockSize = 64
+Latency = 1
+Ports = 32
+

@@ -1,0 +1,985 @@
+[ General ]
+Frequency = 1000
+
+; L1 cache is 16KB (1 per compute unit)
+[ CacheGeometry si-geo-l1 ]
+Sets = 64
+Assoc = 4
+BlockSize = 64
+Latency = 1 
+Ports = 2
+Policy = LRU
+DirectoryLatency = 1
+
+; L1 scalar cache
+[ CacheGeometry si-geo-scalar-l1 ]
+Sets = 64
+Assoc = 4
+BlockSize = 64
+Latency = 1
+Ports = 2
+Policy = LRU
+DirectoryLatency = 1
+
+; L2 cache  KB per module
+[ CacheGeometry si-geo-l2 ]
+Sets = 32
+Assoc = 32
+BlockSize = 64
+Latency = 10
+Ports = 2
+Policy = LRU
+DirectoryLatency = 1
+
+; ---- Main Memory ----
+[ Module mm-00 ]
+Type = MainMemory
+BlockSize = 64
+Latency = 90
+DirectorySize = 131072
+DirectoryAssoc = 131072
+Policy = LRU
+HighNetwork = net-l2-to-mm
+HighNetworkNode= mm0_0
+DRAMSystem = ds-00
+AddressRange = ADDR DIV 64 MOD 8 EQ 0
+Ports = 2
+
+[ Module mm-10 ]
+Type = MainMemory
+BlockSize = 64
+Latency = 90
+DirectorySize = 131072
+DirectoryAssoc = 131072
+Policy = LRU
+HighNetwork = net-l2-to-mm
+HighNetworkNode= mm1_0
+DRAMSystem = ds-01
+AddressRange = ADDR DIV 64 MOD 8 EQ 1
+Ports = 2
+
+[ Module mm-20 ]
+Type = MainMemory
+BlockSize = 64
+Latency = 90
+DirectorySize = 131072
+DirectoryAssoc = 131072
+Policy = LRU
+HighNetwork = net-l2-to-mm
+HighNetworkNode= mm2_0
+DRAMSystem = ds-02
+AddressRange = ADDR DIV 64 MOD 8 EQ 2
+Ports = 2
+
+[ Module mm-30 ]
+Type = MainMemory
+BlockSize = 64
+Latency = 90
+DirectorySize = 131072
+DirectoryAssoc = 131072
+Policy = LRU
+HighNetwork = net-l2-to-mm
+HighNetworkNode= mm3_0
+DRAMSystem = ds-03
+AddressRange = ADDR DIV 64 MOD 8 EQ 3
+Ports = 2
+
+[ Module mm-40 ]
+Type = MainMemory
+BlockSize = 64
+Latency = 90
+DirectorySize = 131072
+DirectoryAssoc = 131072
+Policy = LRU
+HighNetwork = net-l2-to-mm
+HighNetworkNode= mm4_0
+DRAMSystem = ds-04
+AddressRange = ADDR DIV 64 MOD 8 EQ 4
+Ports = 2
+
+[ Module mm-50 ]
+Type = MainMemory
+BlockSize = 64
+Latency = 90
+DirectorySize = 131072
+DirectoryAssoc = 131072
+Policy = LRU
+HighNetwork = net-l2-to-mm
+HighNetworkNode= mm5_0
+DRAMSystem = ds-05
+AddressRange = ADDR DIV 64 MOD 8 EQ 5
+Ports = 2
+
+[ Module mm-60 ]
+Type = MainMemory
+BlockSize = 64
+Latency = 90
+DirectorySize = 131072
+DirectoryAssoc = 131072
+Policy = LRU_EXT
+HighNetwork = net-l2-to-mm
+HighNetworkNode= mm6_0
+DRAMSystem = ds-06
+AddressRange = ADDR DIV 64 MOD 8 EQ 6
+Ports = 2
+
+[ Module mm-70 ]
+Type = MainMemory
+BlockSize = 64
+Latency = 90
+DirectorySize = 131072
+DirectoryAssoc = 131072
+Policy = LRU
+HighNetwork = net-l2-to-mm
+HighNetworkNode= mm7_0
+DRAMSystem = ds-07
+AddressRange = ADDR DIV 64 MOD 8 EQ 7
+Ports = 2
+
+
+[ DRAMSystem ds-00 ]
+SystemDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/dramsim_mc.ini
+DeviceDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/GDDR5_Hynix.ini
+MB = 256
+
+[ DRAMSystem ds-01 ]
+SystemDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/dramsim_mc.ini
+DeviceDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/GDDR5_Hynix.ini
+MB = 256
+
+[ DRAMSystem ds-02 ]
+SystemDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/dramsim_mc.ini
+DeviceDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/GDDR5_Hynix.ini
+MB = 256
+
+[ DRAMSystem ds-03 ]
+SystemDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/dramsim_mc.ini
+DeviceDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/GDDR5_Hynix.ini
+MB = 256
+
+[ DRAMSystem ds-04 ]
+SystemDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/dramsim_mc.ini
+DeviceDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/GDDR5_Hynix.ini
+MB = 256
+
+[ DRAMSystem ds-05 ]
+SystemDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/dramsim_mc.ini
+DeviceDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/GDDR5_Hynix.ini
+MB = 256
+
+[ DRAMSystem ds-06 ]
+SystemDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/dramsim_mc.ini
+DeviceDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/GDDR5_Hynix.ini
+MB = 256
+
+[ DRAMSystem ds-07 ]
+SystemDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/dramsim_mc.ini
+DeviceDescription = /nfs/gap/jopucla/GPU_VERSION/multi2sim/src/configuraciones-sisco/32cu/GDDR5_Hynix.ini
+MB = 256
+
+; ---- L2 Caches ----
+
+[ Module l2-0 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_0
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_0
+AddressRange = ADDR DIV 64 MOD 32 EQ 0
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-1 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_1
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_1
+AddressRange = ADDR DIV 64 MOD 32 EQ 1
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-2 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_2
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_2
+AddressRange = ADDR DIV 64 MOD 32 EQ 2
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-3 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_3
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_3
+AddressRange = ADDR DIV 64 MOD 32 EQ 3
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-4 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_4
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_4
+AddressRange = ADDR DIV 64 MOD 32 EQ 4
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-5 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_5
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_5
+AddressRange = ADDR DIV 64 MOD 32 EQ 5
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-6 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_6
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_6
+AddressRange = ADDR DIV 64 MOD 32 EQ 6
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-7 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_7
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_7
+AddressRange = ADDR DIV 64 MOD 32 EQ 7
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+
+[ Module l2-8 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_8
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_8
+AddressRange = ADDR DIV 64 MOD 32 EQ 8
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-9 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_9
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_9
+AddressRange = ADDR DIV 64 MOD 32 EQ 9
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-10 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_10
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_10
+AddressRange = ADDR DIV 64 MOD 32 EQ 10
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-11 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_11
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_11
+AddressRange = ADDR DIV 64 MOD 32 EQ 11
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-12 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_12
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_12
+AddressRange = ADDR DIV 64 MOD 32 EQ 12
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-13 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_13
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_13
+AddressRange = ADDR DIV 64 MOD 32 EQ 13
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-14 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_14
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_14
+AddressRange = ADDR DIV 64 MOD 32 EQ 14
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-15 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_15
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_15
+AddressRange = ADDR DIV 64 MOD 32 EQ 15
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+
+[ Module l2-16 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_16
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_16
+AddressRange = ADDR DIV 64 MOD 32 EQ 16
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-17 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_17
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_17
+AddressRange = ADDR DIV 64 MOD 32 EQ 17
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-18 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_18
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_18
+AddressRange = ADDR DIV 64 MOD 32 EQ 18
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+
+[ Module l2-19 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_19
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_19
+AddressRange = ADDR DIV 64 MOD 32 EQ 19
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-20 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_20
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_20
+AddressRange = ADDR DIV 64 MOD 32 EQ 20
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-21 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_21
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_21
+AddressRange = ADDR DIV 64 MOD 32 EQ 21
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-22 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_22
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_22
+AddressRange = ADDR DIV 64 MOD 32 EQ 22
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-23 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_23
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_23
+AddressRange = ADDR DIV 64 MOD 32 EQ 23
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+
+[ Module l2-24 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_24
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_24
+AddressRange = ADDR DIV 64 MOD 32 EQ 24
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-25 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_25
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_25
+AddressRange = ADDR DIV 64 MOD 32 EQ 25
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-26 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_26
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_26
+AddressRange = ADDR DIV 64 MOD 32 EQ 26
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-27 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_27
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_27
+AddressRange = ADDR DIV 64 MOD 32 EQ 27
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-28 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_28
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_28
+AddressRange = ADDR DIV 64 MOD 32 EQ 28
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-29 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_29
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_29
+AddressRange = ADDR DIV 64 MOD 32 EQ 29
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-30 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_30
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_30
+AddressRange = ADDR DIV 64 MOD 32 EQ 30
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+[ Module l2-31 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_31
+LowNetwork = net-l2-to-mm
+LowNetworkNode = l2_31
+AddressRange = ADDR DIV 64 MOD 32 EQ 31
+LowModules = mm-00 mm-10 mm-20 mm-30 mm-40 mm-50 mm-60 mm-70
+
+
+
+; ---- L1 Caches ----
+
+[ Module l1-cu00 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU00
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu01 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU01 
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu02 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU02
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu03 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU03
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu04 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU04
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu05 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU05
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu06 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU06 
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu07 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU07
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu08 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU08
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu09 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU09
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu10 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU10
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu11 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU11 
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu12 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU12
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu13 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU13
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu14 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU14
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu15 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU15
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu16 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU16 
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu17 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU17
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu18 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU18
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu19 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU19
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu20 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU20
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu21 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU21 
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu22 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU22
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu23 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU23
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu24 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU24
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu25 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU25
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu26 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU26 
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu27 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU27
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu28 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU28
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu29 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU29
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu30 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU30
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu31 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU31
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+; ---- L1 Scalar Caches ----
+
+[ Module l1-cu-scalar0 ]
+Type = Cache
+Geometry = si-geo-scalar-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = scalar0
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu-scalar1 ]
+Type = Cache
+Geometry = si-geo-scalar-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = scalar1
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu-scalar2 ]
+Type = Cache
+Geometry = si-geo-scalar-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = scalar2
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu-scalar3 ]
+Type = Cache
+Geometry = si-geo-scalar-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = scalar3
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu-scalar4 ]
+Type = Cache
+Geometry = si-geo-scalar-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = scalar4
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu-scalar5 ]
+Type = Cache
+Geometry = si-geo-scalar-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = scalar5
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu-scalar6 ]
+Type = Cache
+Geometry = si-geo-scalar-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = scalar6
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+[ Module l1-cu-scalar7 ]
+Type = Cache
+Geometry = si-geo-scalar-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = scalar7
+LowModules = l2-0 l2-1 l2-2 l2-3 l2-4 l2-5 l2-6 l2-7 l2-8 l2-9 l2-10 l2-11 l2-12 l2-13 l2-14 l2-15 l2-16 l2-17 l2-18 l2-19 l2-20 l2-21 l2-22 l2-23 l2-24 l2-25 l2-26 l2-27 l2-28 l2-29 l2-30 l2-31
+
+; ---- Associating CUs with L1s ----
+
+[ Entry gpu-cu-00 ]
+Arch = SouthernIslands
+ComputeUnit = 0
+DataModule = l1-cu00
+ConstantDataModule = l1-cu-scalar0
+
+[ Entry gpu-cu-01 ]
+Arch = SouthernIslands
+ComputeUnit = 1
+DataModule = l1-cu01
+ConstantDataModule = l1-cu-scalar0
+
+[ Entry gpu-cu-02 ]
+Arch = SouthernIslands
+ComputeUnit = 2
+DataModule = l1-cu02
+ConstantDataModule = l1-cu-scalar0
+
+[ Entry gpu-cu-03 ]
+Arch = SouthernIslands
+ComputeUnit = 3
+DataModule = l1-cu03
+ConstantDataModule = l1-cu-scalar0
+
+[ Entry gpu-cu-04 ]
+Arch = SouthernIslands
+ComputeUnit = 4
+DataModule = l1-cu04
+ConstantDataModule = l1-cu-scalar1
+
+[ Entry gpu-cu-05 ]
+Arch = SouthernIslands
+ComputeUnit = 5
+DataModule = l1-cu05
+ConstantDataModule = l1-cu-scalar1
+
+[ Entry gpu-cu-06 ]
+Arch = SouthernIslands
+ComputeUnit = 6
+DataModule = l1-cu06
+ConstantDataModule = l1-cu-scalar1
+
+[ Entry gpu-cu-07 ]
+Arch = SouthernIslands
+ComputeUnit = 7
+DataModule = l1-cu07
+ConstantDataModule = l1-cu-scalar1
+
+[ Entry gpu-cu-08 ]
+Arch = SouthernIslands
+ComputeUnit = 8
+DataModule = l1-cu08
+ConstantDataModule = l1-cu-scalar2
+
+[ Entry gpu-cu-09 ]
+Arch = SouthernIslands
+ComputeUnit = 9
+DataModule = l1-cu09
+ConstantDataModule = l1-cu-scalar2
+
+[ Entry gpu-cu-10 ]
+Arch = SouthernIslands
+ComputeUnit = 10
+DataModule = l1-cu10
+ConstantDataModule = l1-cu-scalar2
+
+[ Entry gpu-cu-11 ]
+Arch = SouthernIslands
+ComputeUnit = 11
+DataModule = l1-cu11
+ConstantDataModule = l1-cu-scalar2
+
+[ Entry gpu-cu-12 ]
+Arch = SouthernIslands
+ComputeUnit = 12
+DataModule = l1-cu12
+ConstantDataModule = l1-cu-scalar3
+
+[ Entry gpu-cu-13 ]
+Arch = SouthernIslands
+ComputeUnit = 13
+DataModule = l1-cu13
+ConstantDataModule = l1-cu-scalar3
+
+[ Entry gpu-cu-14 ]
+Arch = SouthernIslands
+ComputeUnit = 14
+DataModule = l1-cu14
+ConstantDataModule = l1-cu-scalar3
+
+[ Entry gpu-cu-15 ]
+Arch = SouthernIslands
+ComputeUnit = 15
+DataModule = l1-cu15
+ConstantDataModule = l1-cu-scalar3
+
+[ Entry gpu-cu-16 ]
+Arch = SouthernIslands
+ComputeUnit = 16
+DataModule = l1-cu16
+ConstantDataModule = l1-cu-scalar4
+
+[ Entry gpu-cu-17 ]
+Arch = SouthernIslands
+ComputeUnit = 17
+DataModule = l1-cu17
+ConstantDataModule = l1-cu-scalar4
+
+[ Entry gpu-cu-18 ]
+Arch = SouthernIslands
+ComputeUnit = 18
+DataModule = l1-cu18
+ConstantDataModule = l1-cu-scalar4
+
+[ Entry gpu-cu-19 ]
+Arch = SouthernIslands
+ComputeUnit = 19
+DataModule = l1-cu19
+ConstantDataModule = l1-cu-scalar4
+
+[ Entry gpu-cu-20 ]
+Arch = SouthernIslands
+ComputeUnit = 20
+DataModule = l1-cu20
+ConstantDataModule = l1-cu-scalar5
+
+[ Entry gpu-cu-21 ]
+Arch = SouthernIslands
+ComputeUnit = 21
+DataModule = l1-cu21
+ConstantDataModule = l1-cu-scalar5
+
+[ Entry gpu-cu-22 ]
+Arch = SouthernIslands
+ComputeUnit = 22
+DataModule = l1-cu22
+ConstantDataModule = l1-cu-scalar5
+
+[ Entry gpu-cu-23 ]
+Arch = SouthernIslands
+ComputeUnit = 23
+DataModule = l1-cu23
+ConstantDataModule = l1-cu-scalar5
+
+[ Entry gpu-cu-24 ]
+Arch = SouthernIslands
+ComputeUnit = 24
+DataModule = l1-cu24
+ConstantDataModule = l1-cu-scalar6
+
+[ Entry gpu-cu-25 ]
+Arch = SouthernIslands
+ComputeUnit = 25
+DataModule = l1-cu25
+ConstantDataModule = l1-cu-scalar6
+
+[ Entry gpu-cu-26 ]
+Arch = SouthernIslands
+ComputeUnit = 26
+DataModule = l1-cu26
+ConstantDataModule = l1-cu-scalar6
+
+[ Entry gpu-cu-27 ]
+Arch = SouthernIslands
+ComputeUnit = 27
+DataModule = l1-cu27
+ConstantDataModule = l1-cu-scalar6
+
+[ Entry gpu-cu-28 ]
+Arch = SouthernIslands
+ComputeUnit = 28
+DataModule = l1-cu28
+ConstantDataModule = l1-cu-scalar7
+
+[ Entry gpu-cu-29 ]
+Arch = SouthernIslands
+ComputeUnit = 29
+DataModule = l1-cu29
+ConstantDataModule = l1-cu-scalar7
+
+[ Entry gpu-cu-30 ]
+Arch = SouthernIslands
+ComputeUnit = 30
+DataModule = l1-cu30
+ConstantDataModule = l1-cu-scalar7
+
+[ Entry gpu-cu-31 ]
+Arch = SouthernIslands
+ComputeUnit = 31
+DataModule = l1-cu31
+ConstantDataModule = l1-cu-scalar7
+

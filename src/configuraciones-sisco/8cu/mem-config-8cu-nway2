@@ -1,0 +1,246 @@
+[ General ]
+Frequency = 1000
+;Directorytype = vi 
+DirectoryType = nmoesi
+;CoalescingModel = merge_rw 
+;MshrProtocol = default
+
+; L1 cache is 16KB (1 per compute unit)
+[ CacheGeometry si-geo-l1 ]
+;sets = 64
+;assoc = 4
+Sets = 64
+Assoc = 4
+dir_entry_per_line = 1
+dir_entry_per_line_max = 0
+BlockSize = 64
+Latency = 1 
+Ports = 2
+mshr = 128
+Policy = LRU
+DirectoryLatency = 1
+
+; L1 scalar cache
+[ CacheGeometry si-geo-scalar-l1 ]
+;Sets = 64
+;Assoc = 4
+Sets = 64
+dir_entry_per_line = 1
+dir_entry_per_line_max = 0
+Assoc = 4
+BlockSize = 64
+Latency = 1
+Ports = 2
+mshr = 128
+Policy = LRU
+DirectoryLatency = 1
+
+; L2 cache 128 KB per module
+[ CacheGeometry si-geo-l2 ]
+Sets = 128
+Assoc = 32 
+;Sets = 256
+dir_entry_per_line = 1
+dir_entry_per_line_max = 0
+extra_dir_sets = 0
+;Assoc = 32
+BlockSize = 64
+Latency = 10
+Ports = 2
+mshr = 32768
+Policy = LRU
+DirectoryLatency = 1
+EvictPolicy = Exclusive
+NWayEvicts = 3
+
+
+; ---- Main Memory ----
+[ Module mm-00 ]
+Type = MainMemory
+BlockSize = 64
+mshr = 32768
+Latency = 90
+DirectorySize = 131072
+DirectoryAssoc = 131072
+Policy = LRU_EXT
+HighNetwork = net-l2-to-mm0
+HighNetworkNode= mm0_0
+DRAMSystem = ds-00
+AddressRange = ADDR DIV 512 MOD 2 EQ 0
+Ports = 2
+
+[ Module mm-10 ]
+Type = MainMemory
+BlockSize = 64
+mshr = 32768
+Latency = 90
+DirectorySize = 131072
+DirectoryAssoc = 131072
+Policy = LRU_EXT
+HighNetwork = net-l2-to-mm1
+HighNetworkNode= mm1_0
+DRAMSystem = ds-01
+AddressRange = ADDR DIV 512 MOD 2 EQ 1
+Ports = 2
+
+
+[ DRAMSystem ds-00 ]
+MB = 256
+
+[ DRAMSystem ds-01 ]
+MB = 256
+
+;[ DRAMSystem ds-10 ]
+;MB = 256
+
+;[ DRAMSystem ds-11 ]
+;MB = 256
+
+
+; ---- L2 Caches ----
+
+[ Module l2-0 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_0
+LowNetwork = net-l2-to-mm0
+LowNetworkNode = l2_0
+AddressRange = ADDR DIV 512 MOD 2 EQ 0
+LowModules = mm-00
+
+[ Module l2-1 ]
+Type = Cache
+Geometry = si-geo-l2
+HighNetwork = net-l1-to-l2
+HighNetworkNode= l2_1
+LowNetwork = net-l2-to-mm1
+LowNetworkNode = l2_1
+AddressRange = ADDR DIV 512 MOD 2 EQ 1
+LowModules = mm-10
+
+; ---- L1 Caches ----
+
+[ Module l1-cu00 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU00
+LowModules = l2-0 l2-1
+
+[ Module l1-cu01 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU01 
+LowModules = l2-0 l2-1
+
+[ Module l1-cu02 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU02
+LowModules = l2-0 l2-1
+
+[ Module l1-cu03 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU03
+LowModules = l2-0 l2-1
+
+[ Module l1-cu04 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU04
+LowModules = l2-0 l2-1
+
+[ Module l1-cu05 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU05
+LowModules = l2-0 l2-1
+
+[ Module l1-cu06 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU06 
+LowModules = l2-0 l2-1
+
+[ Module l1-cu07 ]
+Type = Cache
+Geometry = si-geo-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = CU07
+LowModules = l2-0 l2-1
+
+; ---- L1 Scalar Caches ----
+
+[ Module l1-cu-scalar0 ]
+Type = Cache
+Geometry = si-geo-scalar-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = scalar0
+LowModules = l2-0 l2-1
+
+[ Module l1-cu-scalar1 ]
+Type = Cache
+Geometry = si-geo-scalar-l1
+LowNetwork = net-l1-to-l2
+LowNetworkNode = scalar1
+LowModules = l2-0 l2-1
+
+; ---- Associating CUs with L1s ----
+
+[ Entry gpu-cu-00 ]
+Arch = SouthernIslands
+ComputeUnit = 0
+DataModule = l1-cu00
+ConstantDataModule = l1-cu-scalar0
+
+[ Entry gpu-cu-01 ]
+Arch = SouthernIslands
+ComputeUnit = 1
+DataModule = l1-cu01
+ConstantDataModule = l1-cu-scalar0
+
+[ Entry gpu-cu-02 ]
+Arch = SouthernIslands
+ComputeUnit = 2
+DataModule = l1-cu02
+ConstantDataModule = l1-cu-scalar0
+
+[ Entry gpu-cu-03 ]
+Arch = SouthernIslands
+ComputeUnit = 3
+DataModule = l1-cu03
+ConstantDataModule = l1-cu-scalar0
+
+[ Entry gpu-cu-04 ]
+Arch = SouthernIslands
+ComputeUnit = 4
+DataModule = l1-cu04
+ConstantDataModule = l1-cu-scalar1
+
+[ Entry gpu-cu-05 ]
+Arch = SouthernIslands
+ComputeUnit = 5
+DataModule = l1-cu05
+ConstantDataModule = l1-cu-scalar1
+
+[ Entry gpu-cu-06 ]
+Arch = SouthernIslands
+ComputeUnit = 6
+DataModule = l1-cu06
+ConstantDataModule = l1-cu-scalar1
+
+[ Entry gpu-cu-07 ]
+Arch = SouthernIslands
+ComputeUnit = 7
+DataModule = l1-cu07
+ConstantDataModule = l1-cu-scalar1
+
+

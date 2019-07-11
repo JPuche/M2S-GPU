@@ -1,0 +1,7311 @@
+[ General ]
+Frequency = 1000
+;Frequency = 8000
+
+;NETWORKS
+
+[ Network.net-l1-to-l2 ]
+DefaultInputBufferSize = 9999528
+DefaultOutputBufferSize = 9999528
+DefaultNodeBandwidth = 576
+DefaultBandwidth = 144
+
+[ Network.net-l2-to-mm ]
+DefaultInputBufferSize = 9999528
+DefaultOutputBufferSize = 9999528
+DefaultNodeBandwidth = 576
+DefaultBandwidth = 144
+
+
+;;;;;;;;;; NODES MM ;;;;;;;;;;;
+
+[ Network.net-l2-to-mm.node.mm0_0 ]
+type = EndNode
+
+[ Network.net-l2-to-mm.node.mm1_0 ]
+type = EndNode
+
+[ Network.net-l2-to-mm.node.mm2_0 ]
+type = EndNode
+
+[ Network.net-l2-to-mm.node.mm3_0 ]
+type = EndNode
+
+[ Network.net-l2-to-mm.node.mm4_0 ]
+type = EndNode
+
+[ Network.net-l2-to-mm.node.mm5_0 ]
+type = EndNode
+
+[ Network.net-l2-to-mm.node.mm6_0 ]
+type = EndNode
+
+[ Network.net-l2-to-mm.node.mm7_0 ]
+type = EndNode
+
+;;;;;;;;;; NODES L2 ;;;;;;;;;;;;
+
+[ Network.net-l2-to-mm.Node.l2_0 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_1 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_2 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_3 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_4 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_5 ]
+
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_6 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_7 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_8 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_9 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_10 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_11 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_12 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_13 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_14 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_15 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_16 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_17 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_18 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_19 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_20 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_21 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_22 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_23 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_24 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_25 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_26 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_27 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_28 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_29 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_30 ]
+Type = EndNode
+
+[ Network.net-l2-to-mm.Node.l2_31 ]
+Type = EndNode
+
+
+;;;;;;;;;;;;; SWITCHES L2-MM ;;;;;;;;;;;;;
+
+[ Network.net-l2-to-mm.Node.switch0 ]
+Type = Switch
+
+[ Network.net-l2-to-mm.Node.switch1 ]
+Type = Switch
+
+[ Network.net-l2-to-mm.Node.switch2 ]
+Type = Switch
+
+[ Network.net-l2-to-mm.Node.switch3 ]
+Type = Switch
+
+[ Network.net-l2-to-mm.Node.switch4 ]
+Type = Switch
+
+[ Network.net-l2-to-mm.Node.switch5 ]
+Type = Switch
+
+[ Network.net-l2-to-mm.Node.switch6 ]
+Type = Switch
+
+[ Network.net-l2-to-mm.Node.switch7 ]
+Type = Switch
+
+
+;;;;;;;;;;;; LINKS L2 - SWITCH - MM ;;;;;;;;;;;;;;
+
+
+[ Network.net-l2-to-mm.Link.l2_0-switch0 ]
+Source = l2_0
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_0-switch1 ]
+Source = l2_0
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_0-switch2 ]
+Source = l2_0
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_0-switch3 ]
+Source = l2_0
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_0-switch4 ]
+Source = l2_0
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_0-switch5 ]
+Source = l2_0
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_0-switch6 ]
+Source = l2_0
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_0-switch7 ]
+Source = l2_0
+Dest = switch7
+Type = Bidirectional
+
+
+[ Network.net-l2-to-mm.Link.l2_1-switch0 ]
+Source = l2_1
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_1-switch1 ]
+Source = l2_1
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_1-switch2 ]
+Source = l2_1
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_1-switch3 ]
+Source = l2_1
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_1-switch4 ]
+Source = l2_1
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_1-switch5 ]
+Source = l2_1
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_1-switch6 ]
+Source = l2_1
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_1-switch7 ]
+Source = l2_1
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_2-switch0 ]
+Source = l2_2
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_2-switch1 ]
+Source = l2_2
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_2-switch2 ]
+Source = l2_2
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_2-switch3 ]
+Source = l2_2
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_2-switch4 ]
+Source = l2_2
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_2-switch5 ]
+Source = l2_2
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_2-switch6 ]
+Source = l2_2
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_2-switch7 ]
+Source = l2_2
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_3-switch0 ]
+Source = l2_3
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_3-switch1 ]
+Source = l2_3
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_3-switch2 ]
+Source = l2_3
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_3-switch3 ]
+Source = l2_3
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_3-switch4 ]
+Source = l2_3
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_3-switch5 ]
+Source = l2_3
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_3-switch6 ]
+Source = l2_3
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_3-switch7 ]
+Source = l2_3
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_4-switch0 ]
+Source = l2_4
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_4-switch1 ]
+Source = l2_4
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_4-switch2 ]
+Source = l2_4
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_4-switch3 ]
+Source = l2_4
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_4-switch4 ]
+Source = l2_4
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_4-switch5 ]
+Source = l2_4
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_4-switch6 ]
+Source = l2_4
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_4-switch7 ]
+Source = l2_4
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_5-switch0 ]
+Source = l2_5
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_5-switch1 ]
+Source = l2_5
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_5-switch2 ]
+Source = l2_5
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_5-switch3 ]
+Source = l2_5
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_5-switch4 ]
+Source = l2_5
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_5-switch5 ]
+Source = l2_5
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_5-switch6 ]
+Source = l2_5
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_5-switch7 ]
+Source = l2_5
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_6-switch0 ]
+Source = l2_6
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_6-switch1 ]
+Source = l2_6
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_6-switch2 ]
+Source = l2_6
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_6-switch3 ]
+Source = l2_6
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_6-switch4 ]
+Source = l2_6
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_6-switch5 ]
+Source = l2_6
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_6-switch6 ]
+Source = l2_6
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_6-switch7 ]
+Source = l2_6
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_7-switch0 ]
+Source = l2_7
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_7-switch1 ]
+Source = l2_7
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_7-switch2 ]
+Source = l2_7
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_7-switch3 ]
+Source = l2_7
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_7-switch4 ]
+Source = l2_7
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_7-switch5 ]
+Source = l2_7
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_7-switch6 ]
+Source = l2_7
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_7-switch7 ]
+Source = l2_7
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_8-switch0 ]
+Source = l2_8
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_8-switch1 ]
+Source = l2_8
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_8-switch2 ]
+Source = l2_8
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_8-switch3 ]
+Source = l2_8
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_8-switch4 ]
+Source = l2_8
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_8-switch5 ]
+Source = l2_8
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_8-switch6 ]
+Source = l2_8
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_8-switch7 ]
+Source = l2_8
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_9-switch0 ]
+Source = l2_9
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_9-switch1 ]
+Source = l2_9
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_9-switch2 ]
+Source = l2_9
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_9-switch3 ]
+Source = l2_9
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_9-switch4 ]
+Source = l2_9
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_9-switch5 ]
+Source = l2_9
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_9-switch6 ]
+Source = l2_9
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_9-switch7 ]
+Source = l2_9
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_10-switch0 ]
+Source = l2_10
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_10-switch1 ]
+Source = l2_10
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_10-switch2 ]
+Source = l2_10
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_10-switch3 ]
+Source = l2_10
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_10-switch4 ]
+Source = l2_10
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_10-switch5 ]
+Source = l2_10
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_10-switch6 ]
+Source = l2_10
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_10-switch7 ]
+Source = l2_10
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_11-switch0 ]
+Source = l2_11
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_11-switch1 ]
+Source = l2_11
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_11-switch2 ]
+Source = l2_11
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_11-switch3 ]
+Source = l2_11
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_11-switch4 ]
+Source = l2_11
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_11-switch5 ]
+Source = l2_11
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_11-switch6 ]
+Source = l2_11
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_11-switch7 ]
+Source = l2_11
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_12-switch0 ]
+Source = l2_12
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_12-switch1 ]
+Source = l2_12
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_12-switch2 ]
+Source = l2_12
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_12-switch3 ]
+Source = l2_12
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_12-switch4 ]
+Source = l2_12
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_12-switch5 ]
+Source = l2_12
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_12-switch6 ]
+Source = l2_12
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_12-switch7 ]
+Source = l2_12
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_13-switch0 ]
+Source = l2_13
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_13-switch1 ]
+Source = l2_13
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_13-switch2 ]
+Source = l2_13
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_13-switch3 ]
+Source = l2_13
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_13-switch4 ]
+Source = l2_13
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_13-switch5 ]
+Source = l2_13
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_13-switch6 ]
+Source = l2_13
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_13-switch7 ]
+Source = l2_13
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_14-switch0 ]
+Source = l2_14
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_14-switch1 ]
+Source = l2_14
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_14-switch2 ]
+Source = l2_14
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_14-switch3 ]
+Source = l2_14
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_14-switch4 ]
+Source = l2_14
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_14-switch5 ]
+Source = l2_14
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_14-switch6 ]
+Source = l2_14
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_14-switch7 ]
+Source = l2_14
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_15-switch0 ]
+Source = l2_15
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_15-switch1 ]
+Source = l2_15
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_15-switch2 ]
+Source = l2_15
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_15-switch3 ]
+Source = l2_15
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_15-switch4 ]
+Source = l2_15
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_15-switch5 ]
+Source = l2_15
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_15-switch6 ]
+Source = l2_15
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_15-switch7 ]
+Source = l2_15
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_16-switch0 ]
+Source = l2_16
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_16-switch1 ]
+Source = l2_16
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_16-switch2 ]
+Source = l2_16
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_16-switch3 ]
+Source = l2_16
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_16-switch4 ]
+Source = l2_16
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_16-switch5 ]
+Source = l2_16
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_16-switch6 ]
+Source = l2_16
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_16-switch7 ]
+Source = l2_16
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_17-switch0 ]
+Source = l2_17
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_17-switch1 ]
+Source = l2_17
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_17-switch2 ]
+Source = l2_17
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_17-switch3 ]
+Source = l2_17
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_17-switch4 ]
+Source = l2_17
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_17-switch5 ]
+Source = l2_17
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_17-switch6 ]
+Source = l2_17
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_17-switch7 ]
+Source = l2_17
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_18-switch0 ]
+Source = l2_18
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_18-switch1 ]
+Source = l2_18
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_18-switch2 ]
+Source = l2_18
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_18-switch3 ]
+Source = l2_18
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_18-switch4 ]
+Source = l2_18
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_18-switch5 ]
+Source = l2_18
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_18-switch6 ]
+Source = l2_18
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_18-switch7 ]
+Source = l2_18
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_19-switch0 ]
+Source = l2_19
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_19-switch1 ]
+Source = l2_19
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_19-switch2 ]
+Source = l2_19
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_19-switch3 ]
+Source = l2_19
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_19-switch4 ]
+Source = l2_19
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_19-switch5 ]
+Source = l2_19
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_19-switch6 ]
+Source = l2_19
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_19-switch7 ]
+Source = l2_19
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_20-switch0 ]
+Source = l2_20
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_20-switch1 ]
+Source = l2_20
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_20-switch2 ]
+Source = l2_20
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_20-switch3 ]
+Source = l2_20
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_20-switch4 ]
+Source = l2_20
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_20-switch5 ]
+Source = l2_20
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_20-switch6 ]
+Source = l2_20
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_20-switch7 ]
+Source = l2_20
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_21-switch0 ]
+Source = l2_21
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_21-switch1 ]
+Source = l2_21
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_21-switch2 ]
+Source = l2_21
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_21-switch3 ]
+Source = l2_21
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_21-switch4 ]
+Source = l2_21
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_21-switch5 ]
+Source = l2_21
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_21-switch6 ]
+Source = l2_21
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_21-switch7 ]
+Source = l2_21
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_22-switch0 ]
+Source = l2_22
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_22-switch1 ]
+Source = l2_22
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_22-switch2 ]
+Source = l2_22
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_22-switch3 ]
+Source = l2_22
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_22-switch4 ]
+Source = l2_22
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_22-switch5 ]
+Source = l2_22
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_22-switch6 ]
+Source = l2_22
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_22-switch7 ]
+Source = l2_22
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_23-switch0 ]
+Source = l2_23
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_23-switch1 ]
+Source = l2_23
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_23-switch2 ]
+Source = l2_23
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_23-switch3 ]
+Source = l2_23
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_23-switch4 ]
+Source = l2_23
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_23-switch5 ]
+Source = l2_23
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_23-switch6 ]
+Source = l2_23
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_23-switch7 ]
+Source = l2_23
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_24-switch0 ]
+Source = l2_24
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_24-switch1 ]
+Source = l2_24
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_24-switch2 ]
+Source = l2_24
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_24-switch3 ]
+Source = l2_24
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_24-switch4 ]
+Source = l2_24
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_24-switch5 ]
+Source = l2_24
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_24-switch6 ]
+Source = l2_24
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_24-switch7 ]
+Source = l2_24
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_25-switch0 ]
+Source = l2_25
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_25-switch1 ]
+Source = l2_25
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_25-switch2 ]
+Source = l2_25
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_25-switch3 ]
+Source = l2_25
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_25-switch4 ]
+Source = l2_25
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_25-switch5 ]
+Source = l2_25
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_25-switch6 ]
+Source = l2_25
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_25-switch7 ]
+Source = l2_25
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_26-switch0 ]
+Source = l2_26
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_26-switch1 ]
+Source = l2_26
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_26-switch2 ]
+Source = l2_26
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_26-switch3 ]
+Source = l2_26
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_26-switch4 ]
+Source = l2_26
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_26-switch5 ]
+Source = l2_26
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_26-switch6 ]
+Source = l2_26
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_26-switch7 ]
+Source = l2_26
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_27-switch0 ]
+Source = l2_27
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_27-switch1 ]
+Source = l2_27
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_27-switch2 ]
+Source = l2_27
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_27-switch3 ]
+Source = l2_27
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_27-switch4 ]
+Source = l2_27
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_27-switch5 ]
+Source = l2_27
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_27-switch6 ]
+Source = l2_27
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_27-switch7 ]
+Source = l2_27
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_28-switch0 ]
+Source = l2_28
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_28-switch1 ]
+Source = l2_28
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_28-switch2 ]
+Source = l2_28
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_28-switch3 ]
+Source = l2_28
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_28-switch4 ]
+Source = l2_28
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_28-switch5 ]
+Source = l2_28
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_28-switch6 ]
+Source = l2_28
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_28-switch7 ]
+Source = l2_28
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_29-switch0 ]
+Source = l2_29
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_29-switch1 ]
+Source = l2_29
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_29-switch2 ]
+Source = l2_29
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_29-switch3 ]
+Source = l2_29
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_29-switch4 ]
+Source = l2_29
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_29-switch5 ]
+Source = l2_29
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_29-switch6 ]
+Source = l2_29
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_29-switch7 ]
+Source = l2_29
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_30-switch0 ]
+Source = l2_30
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_30-switch1 ]
+Source = l2_30
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_30-switch2 ]
+Source = l2_30
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_30-switch3 ]
+Source = l2_30
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_30-switch4 ]
+Source = l2_30
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_30-switch5 ]
+Source = l2_30
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_30-switch6 ]
+Source = l2_30
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_30-switch7 ]
+Source = l2_30
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_31-switch0 ]
+Source = l2_31
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_31-switch1 ]
+Source = l2_31
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_31-switch2 ]
+Source = l2_31
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_31-switch3 ]
+Source = l2_31
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_31-switch4 ]
+Source = l2_31
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_31-switch5 ]
+Source = l2_31
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_31-switch6 ]
+Source = l2_31
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.l2_31-switch7 ]
+Source = l2_31
+Dest = switch7
+Type = Bidirectional
+
+
+
+
+
+
+
+
+[ Network.net-l2-to-mm.Link.mm0_0-switch ]
+Source = mm0_0
+Dest = switch0
+Type = Bidirectional
+
+
+[ Network.net-l2-to-mm.Link.mm1_0-switch ]
+Source = mm1_0
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.mm2_0-switch ]
+Source = mm2_0
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.mm3_0-switch ]
+Source = mm3_0
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.mm4_0-switch ]
+Source = mm4_0
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.mm5_0-switch ]
+Source = mm5_0
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.mm6_0-switch ]
+Source = mm6_0
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l2-to-mm.Link.mm7_0-switch ]
+Source = mm7_0
+Dest = switch7
+Type = Bidirectional
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;; L1 - L2 NETWORK ;;;;;;;;;;;;;;;;;;;;;
+
+[ Network.net-l1-to-l2.Node.scalar0 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.scalar1 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.scalar2 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.scalar3 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.scalar4 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.scalar5 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.scalar6 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.scalar7 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU00 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU01 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU02 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU03 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU04 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU05 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU06 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU07 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU08 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU09 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU10 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU11 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU12 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU13 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU14 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU15 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU16 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU17 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU18 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU19 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU20 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU21 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU22 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU23 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU24 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU25 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU26 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU27 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU28 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU29 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU30 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.CU31 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.switch ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch0 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch1 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch2 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch3 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch4 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch5 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch6 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch7 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch8 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch9 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch10 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch11 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch12 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch13 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch14 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch15 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch16 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch17 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch18 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch19 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch20 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch21 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch22 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch23 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch24 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch25 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch26 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch27 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch28 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch29 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch30 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.switch31 ]
+Type = Switch
+
+[ Network.net-l1-to-l2.Node.l2_0 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_1 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_2 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_3 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_4 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_5 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_6 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_7 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_8 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_9 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_10 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_11 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_12 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_13 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_14 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_15 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_16 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_17 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_18 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_19 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_20 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_21 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_22 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_23 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_24 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_25 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_26 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_27 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_28 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_29 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_30 ]
+Type = EndNode
+
+[ Network.net-l1-to-l2.Node.l2_31 ]
+Type = EndNode
+
+
+
+
+[ Network.net-l1-to-l2.Link.scalar0-switch ]
+Source = scalar0
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.scalar1-switch ]
+Source = scalar1
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.scalar2-switch ]
+Source = scalar2
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.scalar3-switch ]
+Source = scalar3
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.scalar4-switch ]
+Source = scalar4
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.scalar5-switch ]
+Source = scalar5
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.scalar6-switch ]
+Source = scalar6
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.scalar7-switch ]
+Source = scalar7
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch ]
+Source = l2_0
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch ]
+Source = l2_1
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch ]
+Source = l2_2
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch ]
+Source = l2_3
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch ]
+Source = l2_4
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch ]
+Source = l2_5
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch ]
+Source = l2_6
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch ]
+Source = l2_7
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch ]
+Source = l2_8
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch ]
+Source = l2_9
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch ]
+Source = l2_10
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch ]
+Source = l2_11
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch ]
+Source = l2_12
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch ]
+Source = l2_13
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch ]
+Source = l2_14
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch ]
+Source = l2_15
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch ]
+Source = l2_16
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch ]
+Source = l2_17
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch ]
+Source = l2_18
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch ]
+Source = l2_19
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch ]
+Source = l2_20
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch ]
+Source = l2_21
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch ]
+Source = l2_22
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch ]
+Source = l2_23
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch ]
+Source = l2_24
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch ]
+Source = l2_25
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch ]
+Source = l2_26
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch ]
+Source = l2_27
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch ]
+Source = l2_28
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch ]
+Source = l2_29
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch ]
+Source = l2_30
+Dest = switch 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch ]
+Source = l2_31
+Dest = switch 
+Type = Bidirectional
+
+
+
+; links caches vectoriales
+[ Network.net-l1-to-l2.Link.CU00-switch0 ]
+Source = CU00
+Dest = switch0
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU01-switch1 ]
+Source = CU01
+Dest = switch1
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU02-switch2 ]
+Source = CU02
+Dest = switch2
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU03-switch3 ]
+Source = CU03
+Dest = switch3
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU04-switch4 ]
+Source = CU04
+Dest = switch4
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU05-switch5 ]
+Source = CU05
+Dest = switch5
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU06-switch6 ]
+Source = CU06
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU07-switch7 ]
+Source = CU07
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU08-switch8 ]
+Source = CU08
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU09-switch9 ]
+Source = CU09
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU10-switch10 ]
+Source = CU10
+Dest = switch10
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU11-switch11 ]
+Source = CU11
+Dest = switch11
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU12-switch12 ]
+Source = CU12
+Dest = switch12
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU13-switch13 ]
+Source = CU13
+Dest = switch13
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU14-switch14 ]
+Source = CU14
+Dest = switch14
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU15-switch15 ]
+Source = CU15
+Dest = switch15
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU16-switch16 ]
+Source = CU16
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU17-switch17 ]
+Source = CU17
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU18-switch18 ]
+Source = CU18
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU19-switch19 ]
+Source = CU19
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU20-switch20 ]
+Source = CU20
+Dest = switch20
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU21-switch21 ]
+Source = CU21
+Dest = switch21
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU22-switch22 ]
+Source = CU22
+Dest = switch22
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU23-switch23 ]
+Source = CU23
+Dest = switch23
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU24-switch24 ]
+Source = CU24
+Dest = switch24
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU25-switch25 ]
+Source = CU25
+Dest = switch25
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU26-switch26 ]
+Source = CU26
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU27-switch27 ]
+Source = CU27
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU28-switch28 ]
+Source = CU28
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU29-switch29 ]
+Source = CU29
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU30-switch30 ]
+Source = CU30
+Dest = switch30
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.CU31-switch31 ]
+Source = CU31
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch0 ]
+Source = l2_0
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch1 ]
+Source = l2_0
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch2 ]
+Source = l2_0
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_0-switch3 ]
+Source = l2_0
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch4 ]
+Source = l2_0
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch5 ]
+Source = l2_0
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch6 ]
+Source = l2_0
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch7 ]
+Source = l2_0
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch8 ]
+Source = l2_0
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch9 ]
+Source = l2_0
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch10 ]
+Source = l2_0
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch11 ]
+Source = l2_0
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch12 ]
+Source = l2_0
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_0-switch13 ]
+Source = l2_0
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch14 ]
+Source = l2_0
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch15 ]
+Source = l2_0
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch16 ]
+Source = l2_0
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch17 ]
+Source = l2_0
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch18 ]
+Source = l2_0
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch19 ]
+Source = l2_0
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch20 ]
+Source = l2_0
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch21 ]
+Source = l2_0
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch22 ]
+Source = l2_0
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_0-switch23 ]
+Source = l2_0
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch24 ]
+Source = l2_0
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch25 ]
+Source = l2_0
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch26 ]
+Source = l2_0
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch27 ]
+Source = l2_0
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch28 ]
+Source = l2_0
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch29 ]
+Source = l2_0
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch30 ]
+Source = l2_0
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_0-switch31 ]
+Source = l2_0
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch0 ]
+Source = l2_1
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch1 ]
+Source = l2_1
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch2 ]
+Source = l2_1
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_1-switch3 ]
+Source = l2_1
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch4 ]
+Source = l2_1
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch5 ]
+Source = l2_1
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch6 ]
+Source = l2_1
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch7 ]
+Source = l2_1
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch8 ]
+Source = l2_1
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch9 ]
+Source = l2_1
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch10 ]
+Source = l2_1
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch11 ]
+Source = l2_1
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch12 ]
+Source = l2_1
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_1-switch13 ]
+Source = l2_1
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch14 ]
+Source = l2_1
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch15 ]
+Source = l2_1
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch16 ]
+Source = l2_1
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch17 ]
+Source = l2_1
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch18 ]
+Source = l2_1
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch19 ]
+Source = l2_1
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch20 ]
+Source = l2_1
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch21 ]
+Source = l2_1
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch22 ]
+Source = l2_1
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_1-switch23 ]
+Source = l2_1
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch24 ]
+Source = l2_1
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch25 ]
+Source = l2_1
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch26 ]
+Source = l2_1
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch27 ]
+Source = l2_1
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch28 ]
+Source = l2_1
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch29 ]
+Source = l2_1
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch30 ]
+Source = l2_1
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_1-switch31 ]
+Source = l2_1
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch0 ]
+Source = l2_2
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch1 ]
+Source = l2_2
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch2 ]
+Source = l2_2
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_2-switch3 ]
+Source = l2_2
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch4 ]
+Source = l2_2
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch5 ]
+Source = l2_2
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch6 ]
+Source = l2_2
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch7 ]
+Source = l2_2
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch8 ]
+Source = l2_2
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch9 ]
+Source = l2_2
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch10 ]
+Source = l2_2
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch11 ]
+Source = l2_2
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch12 ]
+Source = l2_2
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_2-switch13 ]
+Source = l2_2
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch14 ]
+Source = l2_2
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch15 ]
+Source = l2_2
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch16 ]
+Source = l2_2
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch17 ]
+Source = l2_2
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch18 ]
+Source = l2_2
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch19 ]
+Source = l2_2
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch20 ]
+Source = l2_2
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch21 ]
+Source = l2_2
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch22 ]
+Source = l2_2
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_2-switch23 ]
+Source = l2_2
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch24 ]
+Source = l2_2
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch25 ]
+Source = l2_2
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch26 ]
+Source = l2_2
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch27 ]
+Source = l2_2
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch28 ]
+Source = l2_2
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch29 ]
+Source = l2_2
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch30 ]
+Source = l2_2
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_2-switch31 ]
+Source = l2_2
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch0 ]
+Source = l2_3
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch1 ]
+Source = l2_3
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch2 ]
+Source = l2_3
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_3-switch3 ]
+Source = l2_3
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch4 ]
+Source = l2_3
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch5 ]
+Source = l2_3
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch6 ]
+Source = l2_3
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch7 ]
+Source = l2_3
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch8 ]
+Source = l2_3
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch9 ]
+Source = l2_3
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch10 ]
+Source = l2_3
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch11 ]
+Source = l2_3
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch12 ]
+Source = l2_3
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_3-switch13 ]
+Source = l2_3
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch14 ]
+Source = l2_3
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch15 ]
+Source = l2_3
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch16 ]
+Source = l2_3
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch17 ]
+Source = l2_3
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch18 ]
+Source = l2_3
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch19 ]
+Source = l2_3
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch20 ]
+Source = l2_3
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch21 ]
+Source = l2_3
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch22 ]
+Source = l2_3
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_3-switch23 ]
+Source = l2_3
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch24 ]
+Source = l2_3
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch25 ]
+Source = l2_3
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch26 ]
+Source = l2_3
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch27 ]
+Source = l2_3
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch28 ]
+Source = l2_3
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch29 ]
+Source = l2_3
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch30 ]
+Source = l2_3
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_3-switch31 ]
+Source = l2_3
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch0 ]
+Source = l2_4
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch1 ]
+Source = l2_4
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch2 ]
+Source = l2_4
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_4-switch3 ]
+Source = l2_4
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch4 ]
+Source = l2_4
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch5 ]
+Source = l2_4
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch6 ]
+Source = l2_4
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch7 ]
+Source = l2_4
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch8 ]
+Source = l2_4
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch9 ]
+Source = l2_4
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch10 ]
+Source = l2_4
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch11 ]
+Source = l2_4
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch12 ]
+Source = l2_4
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_4-switch13 ]
+Source = l2_4
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch14 ]
+Source = l2_4
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch15 ]
+Source = l2_4
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch16 ]
+Source = l2_4
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch17 ]
+Source = l2_4
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch18 ]
+Source = l2_4
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch19 ]
+Source = l2_4
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch20 ]
+Source = l2_4
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch21 ]
+Source = l2_4
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch22 ]
+Source = l2_4
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_4-switch23 ]
+Source = l2_4
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch24 ]
+Source = l2_4
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch25 ]
+Source = l2_4
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch26 ]
+Source = l2_4
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch27 ]
+Source = l2_4
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch28 ]
+Source = l2_4
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch29 ]
+Source = l2_4
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch30 ]
+Source = l2_4
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_4-switch31 ]
+Source = l2_4
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch0 ]
+Source = l2_5
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch1 ]
+Source = l2_5
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch2 ]
+Source = l2_5
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_5-switch3 ]
+Source = l2_5
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch4 ]
+Source = l2_5
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch5 ]
+Source = l2_5
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch6 ]
+Source = l2_5
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch7 ]
+Source = l2_5
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch8 ]
+Source = l2_5
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch9 ]
+Source = l2_5
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch10 ]
+Source = l2_5
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch11 ]
+Source = l2_5
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch12 ]
+Source = l2_5
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_5-switch13 ]
+Source = l2_5
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch14 ]
+Source = l2_5
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch15 ]
+Source = l2_5
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch16 ]
+Source = l2_5
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch17 ]
+Source = l2_5
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch18 ]
+Source = l2_5
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch19 ]
+Source = l2_5
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch20 ]
+Source = l2_5
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch21 ]
+Source = l2_5
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch22 ]
+Source = l2_5
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_5-switch23 ]
+Source = l2_5
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch24 ]
+Source = l2_5
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch25 ]
+Source = l2_5
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch26 ]
+Source = l2_5
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch27 ]
+Source = l2_5
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch28 ]
+Source = l2_5
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch29 ]
+Source = l2_5
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch30 ]
+Source = l2_5
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_5-switch31 ]
+Source = l2_5
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch0 ]
+Source = l2_6
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch1 ]
+Source = l2_6
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch2 ]
+Source = l2_6
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_6-switch3 ]
+Source = l2_6
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch4 ]
+Source = l2_6
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch5 ]
+Source = l2_6
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch6 ]
+Source = l2_6
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch7 ]
+Source = l2_6
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch8 ]
+Source = l2_6
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch9 ]
+Source = l2_6
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch10 ]
+Source = l2_6
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch11 ]
+Source = l2_6
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch12 ]
+Source = l2_6
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_6-switch13 ]
+Source = l2_6
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch14 ]
+Source = l2_6
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch15 ]
+Source = l2_6
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch16 ]
+Source = l2_6
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch17 ]
+Source = l2_6
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch18 ]
+Source = l2_6
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch19 ]
+Source = l2_6
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch20 ]
+Source = l2_6
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch21 ]
+Source = l2_6
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch22 ]
+Source = l2_6
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_6-switch23 ]
+Source = l2_6
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch24 ]
+Source = l2_6
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch25 ]
+Source = l2_6
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch26 ]
+Source = l2_6
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch27 ]
+Source = l2_6
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch28 ]
+Source = l2_6
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch29 ]
+Source = l2_6
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch30 ]
+Source = l2_6
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_6-switch31 ]
+Source = l2_6
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch0 ]
+Source = l2_7
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch1 ]
+Source = l2_7
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch2 ]
+Source = l2_7
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_7-switch3 ]
+Source = l2_7
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch4 ]
+Source = l2_7
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch5 ]
+Source = l2_7
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch6 ]
+Source = l2_7
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch7 ]
+Source = l2_7
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch8 ]
+Source = l2_7
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch9 ]
+Source = l2_7
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch10 ]
+Source = l2_7
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch11 ]
+Source = l2_7
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch12 ]
+Source = l2_7
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_7-switch13 ]
+Source = l2_7
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch14 ]
+Source = l2_7
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch15 ]
+Source = l2_7
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch16 ]
+Source = l2_7
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch17 ]
+Source = l2_7
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch18 ]
+Source = l2_7
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch19 ]
+Source = l2_7
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch20 ]
+Source = l2_7
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch21 ]
+Source = l2_7
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch22 ]
+Source = l2_7
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_7-switch23 ]
+Source = l2_7
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch24 ]
+Source = l2_7
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch25 ]
+Source = l2_7
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch26 ]
+Source = l2_7
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch27 ]
+Source = l2_7
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch28 ]
+Source = l2_7
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch29 ]
+Source = l2_7
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch30 ]
+Source = l2_7
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_7-switch31 ]
+Source = l2_7
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch0 ]
+Source = l2_8
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch1 ]
+Source = l2_8
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch2 ]
+Source = l2_8
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_8-switch3 ]
+Source = l2_8
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch4 ]
+Source = l2_8
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch5 ]
+Source = l2_8
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch6 ]
+Source = l2_8
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch7 ]
+Source = l2_8
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch8 ]
+Source = l2_8
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch9 ]
+Source = l2_8
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch10 ]
+Source = l2_8
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch11 ]
+Source = l2_8
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch12 ]
+Source = l2_8
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_8-switch13 ]
+Source = l2_8
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch14 ]
+Source = l2_8
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch15 ]
+Source = l2_8
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch16 ]
+Source = l2_8
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch17 ]
+Source = l2_8
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch18 ]
+Source = l2_8
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch19 ]
+Source = l2_8
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch20 ]
+Source = l2_8
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch21 ]
+Source = l2_8
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch22 ]
+Source = l2_8
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_8-switch23 ]
+Source = l2_8
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch24 ]
+Source = l2_8
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch25 ]
+Source = l2_8
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch26 ]
+Source = l2_8
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch27 ]
+Source = l2_8
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch28 ]
+Source = l2_8
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch29 ]
+Source = l2_8
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch30 ]
+Source = l2_8
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_8-switch31 ]
+Source = l2_8
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch0 ]
+Source = l2_9
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch1 ]
+Source = l2_9
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch2 ]
+Source = l2_9
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_9-switch3 ]
+Source = l2_9
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch4 ]
+Source = l2_9
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch5 ]
+Source = l2_9
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch6 ]
+Source = l2_9
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch7 ]
+Source = l2_9
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch8 ]
+Source = l2_9
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch9 ]
+Source = l2_9
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch10 ]
+Source = l2_9
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch11 ]
+Source = l2_9
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch12 ]
+Source = l2_9
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_9-switch13 ]
+Source = l2_9
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch14 ]
+Source = l2_9
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch15 ]
+Source = l2_9
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch16 ]
+Source = l2_9
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch17 ]
+Source = l2_9
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch18 ]
+Source = l2_9
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch19 ]
+Source = l2_9
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch20 ]
+Source = l2_9
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch21 ]
+Source = l2_9
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch22 ]
+Source = l2_9
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_9-switch23 ]
+Source = l2_9
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch24 ]
+Source = l2_9
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch25 ]
+Source = l2_9
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch26 ]
+Source = l2_9
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch27 ]
+Source = l2_9
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch28 ]
+Source = l2_9
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch29 ]
+Source = l2_9
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch30 ]
+Source = l2_9
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_9-switch31 ]
+Source = l2_9
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch0 ]
+Source = l2_10
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch1 ]
+Source = l2_10
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch2 ]
+Source = l2_10
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_10-switch3 ]
+Source = l2_10
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch4 ]
+Source = l2_10
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch5 ]
+Source = l2_10
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch6 ]
+Source = l2_10
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch7 ]
+Source = l2_10
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch8 ]
+Source = l2_10
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch9 ]
+Source = l2_10
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch10 ]
+Source = l2_10
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch11 ]
+Source = l2_10
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch12 ]
+Source = l2_10
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_10-switch13 ]
+Source = l2_10
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch14 ]
+Source = l2_10
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch15 ]
+Source = l2_10
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch16 ]
+Source = l2_10
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch17 ]
+Source = l2_10
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch18 ]
+Source = l2_10
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch19 ]
+Source = l2_10
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch20 ]
+Source = l2_10
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch21 ]
+Source = l2_10
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch22 ]
+Source = l2_10
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_10-switch23 ]
+Source = l2_10
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch24 ]
+Source = l2_10
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch25 ]
+Source = l2_10
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch26 ]
+Source = l2_10
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch27 ]
+Source = l2_10
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch28 ]
+Source = l2_10
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch29 ]
+Source = l2_10
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch30 ]
+Source = l2_10
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_10-switch31 ]
+Source = l2_10
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch0 ]
+Source = l2_11
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch1 ]
+Source = l2_11
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch2 ]
+Source = l2_11
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_11-switch3 ]
+Source = l2_11
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch4 ]
+Source = l2_11
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch5 ]
+Source = l2_11
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch6 ]
+Source = l2_11
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch7 ]
+Source = l2_11
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch8 ]
+Source = l2_11
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch9 ]
+Source = l2_11
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch10 ]
+Source = l2_11
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch11 ]
+Source = l2_11
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch12 ]
+Source = l2_11
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_11-switch13 ]
+Source = l2_11
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch14 ]
+Source = l2_11
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch15 ]
+Source = l2_11
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch16 ]
+Source = l2_11
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch17 ]
+Source = l2_11
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch18 ]
+Source = l2_11
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch19 ]
+Source = l2_11
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch20 ]
+Source = l2_11
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch21 ]
+Source = l2_11
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch22 ]
+Source = l2_11
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_11-switch23 ]
+Source = l2_11
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch24 ]
+Source = l2_11
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch25 ]
+Source = l2_11
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch26 ]
+Source = l2_11
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch27 ]
+Source = l2_11
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch28 ]
+Source = l2_11
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch29 ]
+Source = l2_11
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch30 ]
+Source = l2_11
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_11-switch31 ]
+Source = l2_11
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch0 ]
+Source = l2_12
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch1 ]
+Source = l2_12
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch2 ]
+Source = l2_12
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_12-switch3 ]
+Source = l2_12
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch4 ]
+Source = l2_12
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch5 ]
+Source = l2_12
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch6 ]
+Source = l2_12
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch7 ]
+Source = l2_12
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch8 ]
+Source = l2_12
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch9 ]
+Source = l2_12
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch10 ]
+Source = l2_12
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch11 ]
+Source = l2_12
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch12 ]
+Source = l2_12
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_12-switch13 ]
+Source = l2_12
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch14 ]
+Source = l2_12
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch15 ]
+Source = l2_12
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch16 ]
+Source = l2_12
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch17 ]
+Source = l2_12
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch18 ]
+Source = l2_12
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch19 ]
+Source = l2_12
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch20 ]
+Source = l2_12
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch21 ]
+Source = l2_12
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch22 ]
+Source = l2_12
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_12-switch23 ]
+Source = l2_12
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch24 ]
+Source = l2_12
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch25 ]
+Source = l2_12
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch26 ]
+Source = l2_12
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch27 ]
+Source = l2_12
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch28 ]
+Source = l2_12
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch29 ]
+Source = l2_12
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch30 ]
+Source = l2_12
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_12-switch31 ]
+Source = l2_12
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch0 ]
+Source = l2_13
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch1 ]
+Source = l2_13
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch2 ]
+Source = l2_13
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_13-switch3 ]
+Source = l2_13
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch4 ]
+Source = l2_13
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch5 ]
+Source = l2_13
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch6 ]
+Source = l2_13
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch7 ]
+Source = l2_13
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch8 ]
+Source = l2_13
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch9 ]
+Source = l2_13
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch10 ]
+Source = l2_13
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch11 ]
+Source = l2_13
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch12 ]
+Source = l2_13
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_13-switch13 ]
+Source = l2_13
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch14 ]
+Source = l2_13
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch15 ]
+Source = l2_13
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch16 ]
+Source = l2_13
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch17 ]
+Source = l2_13
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch18 ]
+Source = l2_13
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch19 ]
+Source = l2_13
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch20 ]
+Source = l2_13
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch21 ]
+Source = l2_13
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch22 ]
+Source = l2_13
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_13-switch23 ]
+Source = l2_13
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch24 ]
+Source = l2_13
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch25 ]
+Source = l2_13
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch26 ]
+Source = l2_13
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch27 ]
+Source = l2_13
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch28 ]
+Source = l2_13
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch29 ]
+Source = l2_13
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch30 ]
+Source = l2_13
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_13-switch31 ]
+Source = l2_13
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch0 ]
+Source = l2_14
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch1 ]
+Source = l2_14
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch2 ]
+Source = l2_14
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_14-switch3 ]
+Source = l2_14
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch4 ]
+Source = l2_14
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch5 ]
+Source = l2_14
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch6 ]
+Source = l2_14
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch7 ]
+Source = l2_14
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch8 ]
+Source = l2_14
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch9 ]
+Source = l2_14
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch10 ]
+Source = l2_14
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch11 ]
+Source = l2_14
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch12 ]
+Source = l2_14
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_14-switch13 ]
+Source = l2_14
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch14 ]
+Source = l2_14
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch15 ]
+Source = l2_14
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch16 ]
+Source = l2_14
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch17 ]
+Source = l2_14
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch18 ]
+Source = l2_14
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch19 ]
+Source = l2_14
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch20 ]
+Source = l2_14
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch21 ]
+Source = l2_14
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch22 ]
+Source = l2_14
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_14-switch23 ]
+Source = l2_14
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch24 ]
+Source = l2_14
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch25 ]
+Source = l2_14
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch26 ]
+Source = l2_14
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch27 ]
+Source = l2_14
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch28 ]
+Source = l2_14
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch29 ]
+Source = l2_14
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch30 ]
+Source = l2_14
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_14-switch31 ]
+Source = l2_14
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch0 ]
+Source = l2_15
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch1 ]
+Source = l2_15
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch2 ]
+Source = l2_15
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_15-switch3 ]
+Source = l2_15
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch4 ]
+Source = l2_15
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch5 ]
+Source = l2_15
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch6 ]
+Source = l2_15
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch7 ]
+Source = l2_15
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch8 ]
+Source = l2_15
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch9 ]
+Source = l2_15
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch10 ]
+Source = l2_15
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch11 ]
+Source = l2_15
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch12 ]
+Source = l2_15
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_15-switch13 ]
+Source = l2_15
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch14 ]
+Source = l2_15
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch15 ]
+Source = l2_15
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch16 ]
+Source = l2_15
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch17 ]
+Source = l2_15
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch18 ]
+Source = l2_15
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch19 ]
+Source = l2_15
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch20 ]
+Source = l2_15
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch21 ]
+Source = l2_15
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch22 ]
+Source = l2_15
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_15-switch23 ]
+Source = l2_15
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch24 ]
+Source = l2_15
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch25 ]
+Source = l2_15
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch26 ]
+Source = l2_15
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch27 ]
+Source = l2_15
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch28 ]
+Source = l2_15
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch29 ]
+Source = l2_15
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch30 ]
+Source = l2_15
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_15-switch31 ]
+Source = l2_15
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch0 ]
+Source = l2_16
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch1 ]
+Source = l2_16
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch2 ]
+Source = l2_16
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_16-switch3 ]
+Source = l2_16
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch4 ]
+Source = l2_16
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch5 ]
+Source = l2_16
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch6 ]
+Source = l2_16
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch7 ]
+Source = l2_16
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch8 ]
+Source = l2_16
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch9 ]
+Source = l2_16
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch10 ]
+Source = l2_16
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch11 ]
+Source = l2_16
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch12 ]
+Source = l2_16
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_16-switch13 ]
+Source = l2_16
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch14 ]
+Source = l2_16
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch15 ]
+Source = l2_16
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch16 ]
+Source = l2_16
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch17 ]
+Source = l2_16
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch18 ]
+Source = l2_16
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch19 ]
+Source = l2_16
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch20 ]
+Source = l2_16
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch21 ]
+Source = l2_16
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch22 ]
+Source = l2_16
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_16-switch23 ]
+Source = l2_16
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch24 ]
+Source = l2_16
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch25 ]
+Source = l2_16
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch26 ]
+Source = l2_16
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch27 ]
+Source = l2_16
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch28 ]
+Source = l2_16
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch29 ]
+Source = l2_16
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch30 ]
+Source = l2_16
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_16-switch31 ]
+Source = l2_16
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch0 ]
+Source = l2_17
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch1 ]
+Source = l2_17
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch2 ]
+Source = l2_17
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_17-switch3 ]
+Source = l2_17
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch4 ]
+Source = l2_17
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch5 ]
+Source = l2_17
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch6 ]
+Source = l2_17
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch7 ]
+Source = l2_17
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch8 ]
+Source = l2_17
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch9 ]
+Source = l2_17
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch10 ]
+Source = l2_17
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch11 ]
+Source = l2_17
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch12 ]
+Source = l2_17
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_17-switch13 ]
+Source = l2_17
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch14 ]
+Source = l2_17
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch15 ]
+Source = l2_17
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch16 ]
+Source = l2_17
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch17 ]
+Source = l2_17
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch18 ]
+Source = l2_17
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch19 ]
+Source = l2_17
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch20 ]
+Source = l2_17
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch21 ]
+Source = l2_17
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch22 ]
+Source = l2_17
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_17-switch23 ]
+Source = l2_17
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch24 ]
+Source = l2_17
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch25 ]
+Source = l2_17
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch26 ]
+Source = l2_17
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch27 ]
+Source = l2_17
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch28 ]
+Source = l2_17
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch29 ]
+Source = l2_17
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch30 ]
+Source = l2_17
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_17-switch31 ]
+Source = l2_17
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch0 ]
+Source = l2_18
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch1 ]
+Source = l2_18
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch2 ]
+Source = l2_18
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_18-switch3 ]
+Source = l2_18
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch4 ]
+Source = l2_18
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch5 ]
+Source = l2_18
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch6 ]
+Source = l2_18
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch7 ]
+Source = l2_18
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch8 ]
+Source = l2_18
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch9 ]
+Source = l2_18
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch10 ]
+Source = l2_18
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch11 ]
+Source = l2_18
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch12 ]
+Source = l2_18
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_18-switch13 ]
+Source = l2_18
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch14 ]
+Source = l2_18
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch15 ]
+Source = l2_18
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch16 ]
+Source = l2_18
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch17 ]
+Source = l2_18
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch18 ]
+Source = l2_18
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch19 ]
+Source = l2_18
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch20 ]
+Source = l2_18
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch21 ]
+Source = l2_18
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch22 ]
+Source = l2_18
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_18-switch23 ]
+Source = l2_18
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch24 ]
+Source = l2_18
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch25 ]
+Source = l2_18
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch26 ]
+Source = l2_18
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch27 ]
+Source = l2_18
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch28 ]
+Source = l2_18
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch29 ]
+Source = l2_18
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch30 ]
+Source = l2_18
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_18-switch31 ]
+Source = l2_18
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch0 ]
+Source = l2_19
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch1 ]
+Source = l2_19
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch2 ]
+Source = l2_19
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_19-switch3 ]
+Source = l2_19
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch4 ]
+Source = l2_19
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch5 ]
+Source = l2_19
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch6 ]
+Source = l2_19
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch7 ]
+Source = l2_19
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch8 ]
+Source = l2_19
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch9 ]
+Source = l2_19
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch10 ]
+Source = l2_19
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch11 ]
+Source = l2_19
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch12 ]
+Source = l2_19
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_19-switch13 ]
+Source = l2_19
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch14 ]
+Source = l2_19
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch15 ]
+Source = l2_19
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch16 ]
+Source = l2_19
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch17 ]
+Source = l2_19
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch18 ]
+Source = l2_19
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch19 ]
+Source = l2_19
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch20 ]
+Source = l2_19
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch21 ]
+Source = l2_19
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch22 ]
+Source = l2_19
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_19-switch23 ]
+Source = l2_19
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch24 ]
+Source = l2_19
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch25 ]
+Source = l2_19
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch26 ]
+Source = l2_19
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch27 ]
+Source = l2_19
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch28 ]
+Source = l2_19
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch29 ]
+Source = l2_19
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch30 ]
+Source = l2_19
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_19-switch31 ]
+Source = l2_19
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch0 ]
+Source = l2_20
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch1 ]
+Source = l2_20
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch2 ]
+Source = l2_20
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_20-switch3 ]
+Source = l2_20
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch4 ]
+Source = l2_20
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch5 ]
+Source = l2_20
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch6 ]
+Source = l2_20
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch7 ]
+Source = l2_20
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch8 ]
+Source = l2_20
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch9 ]
+Source = l2_20
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch10 ]
+Source = l2_20
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch11 ]
+Source = l2_20
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch12 ]
+Source = l2_20
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_20-switch13 ]
+Source = l2_20
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch14 ]
+Source = l2_20
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch15 ]
+Source = l2_20
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch16 ]
+Source = l2_20
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch17 ]
+Source = l2_20
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch18 ]
+Source = l2_20
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch19 ]
+Source = l2_20
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch20 ]
+Source = l2_20
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch21 ]
+Source = l2_20
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch22 ]
+Source = l2_20
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_20-switch23 ]
+Source = l2_20
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch24 ]
+Source = l2_20
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch25 ]
+Source = l2_20
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch26 ]
+Source = l2_20
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch27 ]
+Source = l2_20
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch28 ]
+Source = l2_20
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch29 ]
+Source = l2_20
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch30 ]
+Source = l2_20
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_20-switch31 ]
+Source = l2_20
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch0 ]
+Source = l2_21
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch1 ]
+Source = l2_21
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch2 ]
+Source = l2_21
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_21-switch3 ]
+Source = l2_21
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch4 ]
+Source = l2_21
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch5 ]
+Source = l2_21
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch6 ]
+Source = l2_21
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch7 ]
+Source = l2_21
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch8 ]
+Source = l2_21
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch9 ]
+Source = l2_21
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch10 ]
+Source = l2_21
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch11 ]
+Source = l2_21
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch12 ]
+Source = l2_21
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_21-switch13 ]
+Source = l2_21
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch14 ]
+Source = l2_21
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch15 ]
+Source = l2_21
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch16 ]
+Source = l2_21
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch17 ]
+Source = l2_21
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch18 ]
+Source = l2_21
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch19 ]
+Source = l2_21
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch20 ]
+Source = l2_21
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch21 ]
+Source = l2_21
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch22 ]
+Source = l2_21
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_21-switch23 ]
+Source = l2_21
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch24 ]
+Source = l2_21
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch25 ]
+Source = l2_21
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch26 ]
+Source = l2_21
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch27 ]
+Source = l2_21
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch28 ]
+Source = l2_21
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch29 ]
+Source = l2_21
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch30 ]
+Source = l2_21
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_21-switch31 ]
+Source = l2_21
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch0 ]
+Source = l2_22
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch1 ]
+Source = l2_22
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch2 ]
+Source = l2_22
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_22-switch3 ]
+Source = l2_22
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch4 ]
+Source = l2_22
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch5 ]
+Source = l2_22
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch6 ]
+Source = l2_22
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch7 ]
+Source = l2_22
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch8 ]
+Source = l2_22
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch9 ]
+Source = l2_22
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch10 ]
+Source = l2_22
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch11 ]
+Source = l2_22
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch12 ]
+Source = l2_22
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_22-switch13 ]
+Source = l2_22
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch14 ]
+Source = l2_22
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch15 ]
+Source = l2_22
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch16 ]
+Source = l2_22
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch17 ]
+Source = l2_22
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch18 ]
+Source = l2_22
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch19 ]
+Source = l2_22
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch20 ]
+Source = l2_22
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch21 ]
+Source = l2_22
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch22 ]
+Source = l2_22
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_22-switch23 ]
+Source = l2_22
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch24 ]
+Source = l2_22
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch25 ]
+Source = l2_22
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch26 ]
+Source = l2_22
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch27 ]
+Source = l2_22
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch28 ]
+Source = l2_22
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch29 ]
+Source = l2_22
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch30 ]
+Source = l2_22
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_22-switch31 ]
+Source = l2_22
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch0 ]
+Source = l2_23
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch1 ]
+Source = l2_23
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch2 ]
+Source = l2_23
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_23-switch3 ]
+Source = l2_23
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch4 ]
+Source = l2_23
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch5 ]
+Source = l2_23
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch6 ]
+Source = l2_23
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch7 ]
+Source = l2_23
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch8 ]
+Source = l2_23
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch9 ]
+Source = l2_23
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch10 ]
+Source = l2_23
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch11 ]
+Source = l2_23
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch12 ]
+Source = l2_23
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_23-switch13 ]
+Source = l2_23
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch14 ]
+Source = l2_23
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch15 ]
+Source = l2_23
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch16 ]
+Source = l2_23
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch17 ]
+Source = l2_23
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch18 ]
+Source = l2_23
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch19 ]
+Source = l2_23
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch20 ]
+Source = l2_23
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch21 ]
+Source = l2_23
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch22 ]
+Source = l2_23
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_23-switch23 ]
+Source = l2_23
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch24 ]
+Source = l2_23
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch25 ]
+Source = l2_23
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch26 ]
+Source = l2_23
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch27 ]
+Source = l2_23
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch28 ]
+Source = l2_23
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch29 ]
+Source = l2_23
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch30 ]
+Source = l2_23
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_23-switch31 ]
+Source = l2_23
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch0 ]
+Source = l2_24
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch1 ]
+Source = l2_24
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch2 ]
+Source = l2_24
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_24-switch3 ]
+Source = l2_24
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch4 ]
+Source = l2_24
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch5 ]
+Source = l2_24
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch6 ]
+Source = l2_24
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch7 ]
+Source = l2_24
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch8 ]
+Source = l2_24
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch9 ]
+Source = l2_24
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch10 ]
+Source = l2_24
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch11 ]
+Source = l2_24
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch12 ]
+Source = l2_24
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_24-switch13 ]
+Source = l2_24
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch14 ]
+Source = l2_24
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch15 ]
+Source = l2_24
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch16 ]
+Source = l2_24
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch17 ]
+Source = l2_24
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch18 ]
+Source = l2_24
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch19 ]
+Source = l2_24
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch20 ]
+Source = l2_24
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch21 ]
+Source = l2_24
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch22 ]
+Source = l2_24
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_24-switch23 ]
+Source = l2_24
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch24 ]
+Source = l2_24
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch25 ]
+Source = l2_24
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch26 ]
+Source = l2_24
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch27 ]
+Source = l2_24
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch28 ]
+Source = l2_24
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch29 ]
+Source = l2_24
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch30 ]
+Source = l2_24
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_24-switch31 ]
+Source = l2_24
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch0 ]
+Source = l2_25
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch1 ]
+Source = l2_25
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch2 ]
+Source = l2_25
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_25-switch3 ]
+Source = l2_25
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch4 ]
+Source = l2_25
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch5 ]
+Source = l2_25
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch6 ]
+Source = l2_25
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch7 ]
+Source = l2_25
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch8 ]
+Source = l2_25
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch9 ]
+Source = l2_25
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch10 ]
+Source = l2_25
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch11 ]
+Source = l2_25
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch12 ]
+Source = l2_25
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_25-switch13 ]
+Source = l2_25
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch14 ]
+Source = l2_25
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch15 ]
+Source = l2_25
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch16 ]
+Source = l2_25
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch17 ]
+Source = l2_25
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch18 ]
+Source = l2_25
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch19 ]
+Source = l2_25
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch20 ]
+Source = l2_25
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch21 ]
+Source = l2_25
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch22 ]
+Source = l2_25
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_25-switch23 ]
+Source = l2_25
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch24 ]
+Source = l2_25
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch25 ]
+Source = l2_25
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch26 ]
+Source = l2_25
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch27 ]
+Source = l2_25
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch28 ]
+Source = l2_25
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch29 ]
+Source = l2_25
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch30 ]
+Source = l2_25
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_25-switch31 ]
+Source = l2_25
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch0 ]
+Source = l2_26
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch1 ]
+Source = l2_26
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch2 ]
+Source = l2_26
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_26-switch3 ]
+Source = l2_26
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch4 ]
+Source = l2_26
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch5 ]
+Source = l2_26
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch6 ]
+Source = l2_26
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch7 ]
+Source = l2_26
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch8 ]
+Source = l2_26
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch9 ]
+Source = l2_26
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch10 ]
+Source = l2_26
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch11 ]
+Source = l2_26
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch12 ]
+Source = l2_26
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_26-switch13 ]
+Source = l2_26
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch14 ]
+Source = l2_26
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch15 ]
+Source = l2_26
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch16 ]
+Source = l2_26
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch17 ]
+Source = l2_26
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch18 ]
+Source = l2_26
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch19 ]
+Source = l2_26
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch20 ]
+Source = l2_26
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch21 ]
+Source = l2_26
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch22 ]
+Source = l2_26
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_26-switch23 ]
+Source = l2_26
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch24 ]
+Source = l2_26
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch25 ]
+Source = l2_26
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch26 ]
+Source = l2_26
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch27 ]
+Source = l2_26
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch28 ]
+Source = l2_26
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch29 ]
+Source = l2_26
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch30 ]
+Source = l2_26
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_26-switch31 ]
+Source = l2_26
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch0 ]
+Source = l2_27
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch1 ]
+Source = l2_27
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch2 ]
+Source = l2_27
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_27-switch3 ]
+Source = l2_27
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch4 ]
+Source = l2_27
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch5 ]
+Source = l2_27
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch6 ]
+Source = l2_27
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch7 ]
+Source = l2_27
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch8 ]
+Source = l2_27
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch9 ]
+Source = l2_27
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch10 ]
+Source = l2_27
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch11 ]
+Source = l2_27
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch12 ]
+Source = l2_27
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_27-switch13 ]
+Source = l2_27
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch14 ]
+Source = l2_27
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch15 ]
+Source = l2_27
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch16 ]
+Source = l2_27
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch17 ]
+Source = l2_27
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch18 ]
+Source = l2_27
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch19 ]
+Source = l2_27
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch20 ]
+Source = l2_27
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch21 ]
+Source = l2_27
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch22 ]
+Source = l2_27
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_27-switch23 ]
+Source = l2_27
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch24 ]
+Source = l2_27
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch25 ]
+Source = l2_27
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch26 ]
+Source = l2_27
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch27 ]
+Source = l2_27
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch28 ]
+Source = l2_27
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch29 ]
+Source = l2_27
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch30 ]
+Source = l2_27
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_27-switch31 ]
+Source = l2_27
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch0 ]
+Source = l2_28
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch1 ]
+Source = l2_28
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch2 ]
+Source = l2_28
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_28-switch3 ]
+Source = l2_28
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch4 ]
+Source = l2_28
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch5 ]
+Source = l2_28
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch6 ]
+Source = l2_28
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch7 ]
+Source = l2_28
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch8 ]
+Source = l2_28
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch9 ]
+Source = l2_28
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch10 ]
+Source = l2_28
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch11 ]
+Source = l2_28
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch12 ]
+Source = l2_28
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_28-switch13 ]
+Source = l2_28
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch14 ]
+Source = l2_28
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch15 ]
+Source = l2_28
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch16 ]
+Source = l2_28
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch17 ]
+Source = l2_28
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch18 ]
+Source = l2_28
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch19 ]
+Source = l2_28
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch20 ]
+Source = l2_28
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch21 ]
+Source = l2_28
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch22 ]
+Source = l2_28
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_28-switch23 ]
+Source = l2_28
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch24 ]
+Source = l2_28
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch25 ]
+Source = l2_28
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch26 ]
+Source = l2_28
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch27 ]
+Source = l2_28
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch28 ]
+Source = l2_28
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch29 ]
+Source = l2_28
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch30 ]
+Source = l2_28
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_28-switch31 ]
+Source = l2_28
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch0 ]
+Source = l2_29
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch1 ]
+Source = l2_29
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch2 ]
+Source = l2_29
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_29-switch3 ]
+Source = l2_29
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch4 ]
+Source = l2_29
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch5 ]
+Source = l2_29
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch6 ]
+Source = l2_29
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch7 ]
+Source = l2_29
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch8 ]
+Source = l2_29
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch9 ]
+Source = l2_29
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch10 ]
+Source = l2_29
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch11 ]
+Source = l2_29
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch12 ]
+Source = l2_29
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_29-switch13 ]
+Source = l2_29
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch14 ]
+Source = l2_29
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch15 ]
+Source = l2_29
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch16 ]
+Source = l2_29
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch17 ]
+Source = l2_29
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch18 ]
+Source = l2_29
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch19 ]
+Source = l2_29
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch20 ]
+Source = l2_29
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch21 ]
+Source = l2_29
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch22 ]
+Source = l2_29
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_29-switch23 ]
+Source = l2_29
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch24 ]
+Source = l2_29
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch25 ]
+Source = l2_29
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch26 ]
+Source = l2_29
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch27 ]
+Source = l2_29
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch28 ]
+Source = l2_29
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch29 ]
+Source = l2_29
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch30 ]
+Source = l2_29
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_29-switch31 ]
+Source = l2_29
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch0 ]
+Source = l2_30
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch1 ]
+Source = l2_30
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch2 ]
+Source = l2_30
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_30-switch3 ]
+Source = l2_30
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch4 ]
+Source = l2_30
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch5 ]
+Source = l2_30
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch6 ]
+Source = l2_30
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch7 ]
+Source = l2_30
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch8 ]
+Source = l2_30
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch9 ]
+Source = l2_30
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch10 ]
+Source = l2_30
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch11 ]
+Source = l2_30
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch12 ]
+Source = l2_30
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_30-switch13 ]
+Source = l2_30
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch14 ]
+Source = l2_30
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch15 ]
+Source = l2_30
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch16 ]
+Source = l2_30
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch17 ]
+Source = l2_30
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch18 ]
+Source = l2_30
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch19 ]
+Source = l2_30
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch20 ]
+Source = l2_30
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch21 ]
+Source = l2_30
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch22 ]
+Source = l2_30
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_30-switch23 ]
+Source = l2_30
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch24 ]
+Source = l2_30
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch25 ]
+Source = l2_30
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch26 ]
+Source = l2_30
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch27 ]
+Source = l2_30
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch28 ]
+Source = l2_30
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch29 ]
+Source = l2_30
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch30 ]
+Source = l2_30
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_30-switch31 ]
+Source = l2_30
+Dest = switch31
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch0 ]
+Source = l2_31
+Dest = switch0 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch1 ]
+Source = l2_31
+Dest = switch1 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch2 ]
+Source = l2_31
+Dest = switch2 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_31-switch3 ]
+Source = l2_31
+Dest = switch3 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch4 ]
+Source = l2_31
+Dest = switch4 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch5 ]
+Source = l2_31
+Dest = switch5 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch6 ]
+Source = l2_31
+Dest = switch6
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch7 ]
+Source = l2_31
+Dest = switch7
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch8 ]
+Source = l2_31
+Dest = switch8
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch9 ]
+Source = l2_31
+Dest = switch9
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch10 ]
+Source = l2_31
+Dest = switch10 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch11 ]
+Source = l2_31
+Dest = switch11 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch12 ]
+Source = l2_31
+Dest = switch12 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_31-switch13 ]
+Source = l2_31
+Dest = switch13 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch14 ]
+Source = l2_31
+Dest = switch14 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch15 ]
+Source = l2_31
+Dest = switch15 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch16 ]
+Source = l2_31
+Dest = switch16
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch17 ]
+Source = l2_31
+Dest = switch17
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch18 ]
+Source = l2_31
+Dest = switch18
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch19 ]
+Source = l2_31
+Dest = switch19
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch20 ]
+Source = l2_31
+Dest = switch20 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch21 ]
+Source = l2_31
+Dest = switch21 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch22 ]
+Source = l2_31
+Dest = switch22 
+Type = Bidirectional 
+
+[ Network.net-l1-to-l2.Link.l2_31-switch23 ]
+Source = l2_31
+Dest = switch23 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch24 ]
+Source = l2_31
+Dest = switch24 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch25 ]
+Source = l2_31
+Dest = switch25 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch26 ]
+Source = l2_31
+Dest = switch26
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch27 ]
+Source = l2_31
+Dest = switch27
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch28 ]
+Source = l2_31
+Dest = switch28
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch29 ]
+Source = l2_31
+Dest = switch29
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch30 ]
+Source = l2_31
+Dest = switch30 
+Type = Bidirectional
+
+[ Network.net-l1-to-l2.Link.l2_31-switch31 ]
+Source = l2_31
+Dest = switch31
+Type = Bidirectional
+
+
